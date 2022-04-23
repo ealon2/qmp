@@ -2,6 +2,7 @@ package domain;
 
 import lombok.Data;
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 import java.awt.*;
 
@@ -12,13 +13,7 @@ public class Prenda {
     private Color colorPrimario;
     private Color colorSecundario;
 
-    Prenda (@NotNull TipoPrenda tipoPrenda, @NotNull Material material, @NotNull Color colorPrimario){
-        this.tipoPrenda = tipoPrenda;
-        this.colorPrimario = colorPrimario;
-        this.material = material;
-    }
-
-    Prenda (@NotNull TipoPrenda tipoPrenda, @NotNull Material material,@NotNull Color colorPrimario, @NotNull Color colorSecundario){
+    Prenda (@NotNull TipoPrenda tipoPrenda, @NotNull Material material, @NotNull Color colorPrimario, @Nullable Color colorSecundario){
         this.tipoPrenda = tipoPrenda;
         this.colorPrimario = colorPrimario;
         this.colorSecundario = colorSecundario;
