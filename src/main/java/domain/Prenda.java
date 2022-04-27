@@ -9,11 +9,13 @@ import java.awt.*;
 @Data
 public class Prenda {
     private TipoPrenda tipoPrenda;
+    private Trama trama;
     private Material material;
     private Color colorPrimario;
     private Color colorSecundario;
 
-    Prenda (@NotNull TipoPrenda tipoPrenda, @NotNull Material material, @NotNull Color colorPrimario, @Nullable Color colorSecundario){
+    Prenda (@NotNull Trama trama,@NotNull TipoPrenda tipoPrenda, @NotNull Material material, @NotNull Color colorPrimario, @Nullable Color colorSecundario){
+        this.trama = trama;
         this.tipoPrenda = tipoPrenda;
         this.colorPrimario = colorPrimario;
         this.colorSecundario = colorSecundario;
