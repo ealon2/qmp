@@ -1,72 +1,71 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="4" failures="0" name="domain.PrendaTest" time="0.062" errors="0" skipped="0">
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="domain.PrendaTest" time="0.277" tests="6" errors="0" skipped="0" failures="0">
   <properties>
-    <property name="idea.version" value="2022.1"/>
-    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
-    <property name="java.vm.version" value="11.0.14.1+10-LTS"/>
-    <property name="sun.boot.library.path" value="/Users/ealonsofiasc/Library/Java/JavaVirtualMachines/corretto-11.0.14.1/Contents/Home/lib"/>
     <property name="gopherProxySet" value="false"/>
-    <property name="maven.multiModuleProjectDirectory" value="/Users/ealonsofiasc/UTN/DDS/QMP"/>
-    <property name="java.vm.vendor" value="Amazon.com Inc."/>
-    <property name="java.vendor.url" value="https://aws.amazon.com/corretto/"/>
-    <property name="guice.disable.misplaced.annotation.check" value="true"/>
-    <property name="path.separator" value=":"/>
-    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
-    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/ealonsofiasc/UTN/DDS/QMP/target/test-classes:/Users/ealonsofiasc/UTN/DDS/QMP/target/classes:/Users/ealonsofiasc/.m2/repository/org/jetbrains/annotations/23.0.0/annotations-23.0.0.jar:/Users/ealonsofiasc/.m2/repository/org/junit/jupiter/junit-jupiter/5.8.2/junit-jupiter-5.8.2.jar:/Users/ealonsofiasc/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.8.2/junit-jupiter-api-5.8.2.jar:/Users/ealonsofiasc/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/ealonsofiasc/.m2/repository/org/junit/platform/junit-platform-commons/1.8.2/junit-platform-commons-1.8.2.jar:/Users/ealonsofiasc/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/ealonsofiasc/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.8.2/junit-jupiter-params-5.8.2.jar:/Users/ealonsofiasc/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.8.2/junit-jupiter-engine-5.8.2.jar:/Users/ealonsofiasc/.m2/repository/org/junit/platform/junit-platform-engine/1.8.2/junit-platform-engine-1.8.2.jar:"/>
+    <property name="java.vm.vendor" value="Azul Systems, Inc."/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="http://www.azulsystems.com/"/>
+    <property name="user.timezone" value=""/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Mac OS X"/>
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
-    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/Users/ealonsofiasc/UTN/DDS/QMP"/>
-    <property name="java.vm.compressedOopsMode" value="Zero based"/>
-    <property name="java.runtime.version" value="11.0.14.1+10-LTS"/>
-    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
-    <property name="os.arch" value="x86_64"/>
-    <property name="java.io.tmpdir" value="/var/folders/my/y8cr17l115d8jn7xr2nwzpc4lvs1l0/T/"/>
-    <property name="line.separator" value="
-"/>
-    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="os.name" value="Mac OS X"/>
-    <property name="maven.ext.class.path" value="/Applications/IntelliJ IDEA.app/Contents/plugins/maven/lib/maven-event-listener.jar"/>
-    <property name="classworlds.conf" value="/Applications/IntelliJ IDEA.app/Contents/plugins/maven/lib/maven3/bin/m2.conf"/>
-    <property name="sun.jnu.encoding" value="UTF-8"/>
-    <property name="java.library.path" value="/Users/ealonsofiasc/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
-    <property name="maven.conf" value="/Applications/IntelliJ IDEA.app/Contents/plugins/maven/lib/maven3/conf"/>
-    <property name="jdk.debug" value="release"/>
-    <property name="java.class.version" value="55.0"/>
-    <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="os.version" value="12.3.1"/>
+    <property name="sun.boot.library.path" value="/Users/ealonsofiasc/.sdkman/candidates/java/8.0.282-zulu/zulu-8.jdk/Contents/Home/jre/lib"/>
+    <property name="sun.java.command" value="/Users/ealonsofiasc/UTN/DDS/QMP/target/surefire/surefirebooter4118169790118431612.jar /Users/ealonsofiasc/UTN/DDS/QMP/target/surefire 2022-04-27T19-43-58_928-jvmRun1 surefire3219016526467653054tmp surefire_03327599451287985118tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="surefire.test.class.path" value="/Users/ealonsofiasc/UTN/DDS/QMP/target/test-classes:/Users/ealonsofiasc/UTN/DDS/QMP/target/classes:/Users/ealonsofiasc/.m2/repository/org/jetbrains/annotations/23.0.0/annotations-23.0.0.jar:/Users/ealonsofiasc/.m2/repository/org/junit/jupiter/junit-jupiter/5.8.2/junit-jupiter-5.8.2.jar:/Users/ealonsofiasc/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.8.2/junit-jupiter-api-5.8.2.jar:/Users/ealonsofiasc/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/ealonsofiasc/.m2/repository/org/junit/platform/junit-platform-commons/1.8.2/junit-platform-commons-1.8.2.jar:/Users/ealonsofiasc/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/ealonsofiasc/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.8.2/junit-jupiter-params-5.8.2.jar:/Users/ealonsofiasc/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.8.2/junit-jupiter-engine-5.8.2.jar:/Users/ealonsofiasc/.m2/repository/org/junit/platform/junit-platform-engine/1.8.2/junit-platform-engine-1.8.2.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="/Users/ealonsofiasc"/>
-    <property name="user.timezone" value="America/Argentina/Buenos_Aires"/>
-    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
-    <property name="file.encoding" value="UTF-8"/>
-    <property name="java.specification.version" value="11"/>
-    <property name="user.name" value="ealonsofiasc"/>
-    <property name="java.class.path" value="/Applications/IntelliJ IDEA.app/Contents/plugins/maven/lib/maven3/boot/plexus-classworlds.license:/Applications/IntelliJ IDEA.app/Contents/plugins/maven/lib/maven3/boot/plexus-classworlds-2.6.0.jar"/>
-    <property name="java.vm.specification.version" value="11"/>
-    <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2022.1 test"/>
-    <property name="java.home" value="/Users/ealonsofiasc/Library/Java/JavaVirtualMachines/corretto-11.0.14.1/Contents/Home"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
-    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
-    <property name="java.vm.info" value="mixed mode"/>
-    <property name="java.version" value="11.0.14.1"/>
-    <property name="java.vendor" value="Amazon.com Inc."/>
-    <property name="maven.home" value="/Applications/IntelliJ IDEA.app/Contents/plugins/maven/lib/maven3"/>
+    <property name="java.home" value="/Users/ealonsofiasc/.sdkman/candidates/java/8.0.282-zulu/zulu-8.jdk/Contents/Home/jre"/>
+    <property name="basedir" value="/Users/ealonsofiasc/UTN/DDS/QMP"/>
     <property name="file.separator" value="/"/>
-    <property name="java.version.date" value="2022-02-08"/>
-    <property name="java.vendor.url.bug" value="https://github.com/corretto/corretto-11/issues/"/>
-    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
-    <property name="sun.cpu.endian" value="little"/>
-    <property name="java.vendor.version" value="Corretto-11.0.14.10.1"/>
-    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="jdk.vendor.version" value="Zulu 8.52.0.23-CA-macosx"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="/Users/ealonsofiasc/UTN/DDS/QMP/target/surefire/surefirebooter4118169790118431612.jar:/Users/ealonsofiasc/.m2/repository/org/jacoco/org.jacoco.agent/0.8.2/org.jacoco.agent-0.8.2-runtime.jar"/>
+    <property name="sun.boot.class.path" value="/Users/ealonsofiasc/.sdkman/candidates/java/8.0.282-zulu/zulu-8.jdk/Contents/Home/jre/lib/resources.jar:/Users/ealonsofiasc/.sdkman/candidates/java/8.0.282-zulu/zulu-8.jdk/Contents/Home/jre/lib/rt.jar:/Users/ealonsofiasc/.sdkman/candidates/java/8.0.282-zulu/zulu-8.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Users/ealonsofiasc/.sdkman/candidates/java/8.0.282-zulu/zulu-8.jdk/Contents/Home/jre/lib/jsse.jar:/Users/ealonsofiasc/.sdkman/candidates/java/8.0.282-zulu/zulu-8.jdk/Contents/Home/jre/lib/jce.jar:/Users/ealonsofiasc/.sdkman/candidates/java/8.0.282-zulu/zulu-8.jdk/Contents/Home/jre/lib/charsets.jar:/Users/ealonsofiasc/.sdkman/candidates/java/8.0.282-zulu/zulu-8.jdk/Contents/Home/jre/lib/jfr.jar:/Users/ealonsofiasc/.sdkman/candidates/java/8.0.282-zulu/zulu-8.jdk/Contents/Home/jre/classes"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
-    <property name="sun.cpu.isalist" value=""/>
+    <property name="java.runtime.version" value="1.8.0_282-b08"/>
+    <property name="user.name" value="ealonsofiasc"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="10.16"/>
+    <property name="java.endorsed.dirs" value="/Users/ealonsofiasc/.sdkman/candidates/java/8.0.282-zulu/zulu-8.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="/Users/ealonsofiasc/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="http://www.azulsystems.com/support/"/>
+    <property name="java.io.tmpdir" value="/var/folders/my/y8cr17l115d8jn7xr2nwzpc4lvs1l0/T/"/>
+    <property name="java.version" value="1.8.0_282"/>
+    <property name="user.dir" value="/Users/ealonsofiasc/UTN/DDS/QMP"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.library.path" value="/Users/ealonsofiasc/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Azul Systems, Inc."/>
+    <property name="java.vm.version" value="25.282-b08"/>
+    <property name="java.ext.dirs" value="/Users/ealonsofiasc/Library/Java/Extensions:/Users/ealonsofiasc/.sdkman/candidates/java/8.0.282-zulu/zulu-8.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
   </properties>
-  <testcase classname="domain.PrendaTest" name="crearUnaPrendaConColorPrimario" time="0.062"/>
-  <testcase classname="domain.PrendaTest" name="crearUnaPrendaConColorSecundario" time="0"/>
-  <testcase classname="domain.PrendaTest" name="crarUnaPrendaConColorPrimarioPorPasos" time="0"/>
-  <testcase classname="domain.PrendaTest" name="crarUnaPrendaConColorSecundarioPorPasos" time="0"/>
+  <testcase name="crearUnaPrendaConColorPrimario" classname="domain.PrendaTest" time="0.261"/>
+  <testcase name="crearUnaPrendaConColorSecundario" classname="domain.PrendaTest" time="0.001"/>
+  <testcase name="crearUnaPrendaSinSeleccionarTipoPrimerPaso" classname="domain.PrendaTest" time="0.002"/>
+  <testcase name="crearUnaPrendaSinSeleccionarMaterialSegundoPaso" classname="domain.PrendaTest" time="0"/>
+  <testcase name="crarUnaPrendaConColorPrimarioPorPasos" classname="domain.PrendaTest" time="0"/>
+  <testcase name="crarUnaPrendaConColorSecundarioPorPasos" classname="domain.PrendaTest" time="0"/>
 </testsuite>

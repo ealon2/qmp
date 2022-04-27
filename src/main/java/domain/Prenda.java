@@ -1,12 +1,10 @@
 package domain;
 
-import lombok.Data;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 import java.awt.*;
 
-@Data
 public class Prenda {
     private TipoPrenda tipoPrenda;
     private Trama trama;
@@ -20,5 +18,25 @@ public class Prenda {
         this.colorPrimario = colorPrimario;
         this.colorSecundario = colorSecundario;
         this.material = material;
+    }
+
+    public TipoPrenda getTipoPrenda() {
+        return tipoPrenda;
+    }
+
+    public Trama getTrama() {
+        return trama;
+    }
+
+    public Material getMaterial() {
+        return material;
+    }
+
+    public Color getColorPrimario() {
+        return colorPrimario;
+    }
+
+    public Color getColorSecundario() {
+        return colorSecundario;
     }
 }

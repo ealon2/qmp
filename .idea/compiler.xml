@@ -11,7 +11,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="QMP" target="11" />
+      <module name="QMP" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
