@@ -1,7 +1,13 @@
 domain/Trama.class
-domain/TipoPrenda.class
 domain/CategoriaPrenda.class
+domain/TipoPrenda.class
 domain/Prenda.class
 domain/PrendaBuilder.class
+service/dto/EstadoDelClimaDTO.class
 domain/Material.class
+service/imp/ClimaService.class
+service/AccuWeatherAPI.class
+service/imp/ClimaService$1.class
+service/dto/TemperatureDTO.class
 domain/PrendaBuilderException.class
+service/imp/ClimaService$1$1.class

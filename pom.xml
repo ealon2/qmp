@@ -19,6 +19,18 @@
             <version>5.8.2</version>
             <scope>test</scope>
         </dependency>
+        <!-- Jersey dependencies -->
+        <dependency>
+            <groupId>com.sun.jersey</groupId>
+            <artifactId>jersey-client</artifactId>
+            <version>1.19.4</version>
+        </dependency>
+        <dependency>
+            <groupId>com.sun.jersey</groupId>
+            <artifactId>jersey-json</artifactId>
+            <version>1.19.4</version>
+        </dependency>
+        <!-- End Jersey dependencies     -->
     </dependencies>
     <properties>
         <maven.compiler.source>8</maven.compiler.source>

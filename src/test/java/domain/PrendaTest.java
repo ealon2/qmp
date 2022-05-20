@@ -8,7 +8,6 @@ import java.awt.*;
 
 public class PrendaTest {
     private Prenda prenda;
-
     @Test
     public void crearUnaPrendaConColorPrimario(){
         prenda = new Prenda(Trama.LISA,TipoPrenda.CAMISA, Material.ALGODON,Color.BLACK,null);
