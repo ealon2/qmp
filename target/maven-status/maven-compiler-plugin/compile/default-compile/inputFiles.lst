@@ -6,6 +6,6 @@
 /home/ealon/git/qmp/src/main/java/domain/Prenda.java
 /home/ealon/git/qmp/src/main/java/domain/Trama.java
 /home/ealon/git/qmp/src/main/java/domain/PrendaBuilder.java
-/home/ealon/git/qmp/src/main/java/service/imp/ClimaService.java
+/home/ealon/git/qmp/src/main/java/service/imp/ClimaServiceMock.java
 /home/ealon/git/qmp/src/main/java/service/dto/EstadoDelClimaDTO.java
 /home/ealon/git/qmp/src/main/java/domain/CategoriaPrenda.java
