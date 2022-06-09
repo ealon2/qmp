@@ -12,12 +12,15 @@ public class Prenda {
     private Color colorPrimario;
     private Color colorSecundario;
 
-    Prenda (@NotNull Trama trama,@NotNull TipoPrenda tipoPrenda, @NotNull Material material, @NotNull Color colorPrimario, @Nullable Color colorSecundario){
+    private Double temperatura;
+
+    Prenda (@NotNull Trama trama,@NotNull TipoPrenda tipoPrenda, @NotNull Material material, @NotNull Color colorPrimario, @Nullable Color colorSecundario, Double temperatura){
         this.trama = trama;
         this.tipoPrenda = tipoPrenda;
         this.colorPrimario = colorPrimario;
         this.colorSecundario = colorSecundario;
         this.material = material;
+        this.temperatura = temperatura;
     }
 
     public TipoPrenda getTipoPrenda() {
@@ -38,5 +41,9 @@ public class Prenda {
 
     public Color getColorSecundario() {
         return colorSecundario;
+    }
+
+    public Double getTemperaturaParaPrenda() {
+        return temperatura;
     }
 }

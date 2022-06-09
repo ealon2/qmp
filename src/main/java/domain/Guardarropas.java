@@ -1,53 +1,30 @@
 package domain;
 
+import service.ServicioMetereologico;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class Guardarropas {
 
-    private List<Prenda> prendas;
+    private final GeneradorDeSugerencias generadorDeSugerencias;
+    private final List<Prenda> prendas;
+    private final ServicioMetereologico servicioMetereologico;
 
-    private List<Sugerencia> sugerencias;
-
-    public Guardarropas(){
+    public Guardarropas(GeneradorDeSugerencias generadorDeSugerencias, ServicioMetereologico servicioMetereologico){
         this.prendas = new ArrayList<Prenda>();
-        this.sugerencias = new ArrayList<Sugerencia>();
-    }
-
-    public void aceptarSugerencia(Sugerencia sugerencia){
-        sugerencia.ejectuar(this);
-    }
-
-    public void reversarSugerencia(Sugerencia sugerencia){
-        sugerencia.reversar(this);
+        this.generadorDeSugerencias = generadorDeSugerencias;
+        this.servicioMetereologico = servicioMetereologico;
     }
 
     public void agregarPrenda(Prenda prenda) {
         this.prendas.add(prenda);
     }
 
-    public void quitarPrenda(Prenda prenda) {
-        this.prendas.remove(prenda);
-    }
-
-    public List<Prenda> getPrendas(){
-        return prendas;
-    }
-
-    public List<Sugerencia> obtenerSugerencias() {
-        return sugerencias;
-    }
-
-    public void agregrarSugerencia(Sugerencia sugerencia) {
-        this.sugerencias.add(sugerencia);
-    }
-
-    public void quitarSugerencia(Sugerencia sugerencia) {
-        this.sugerencias.remove(sugerencia);
-    }
-
-    public List<Prenda> obtenerPrendas() {
-        return prendas;
+    public List<Prenda> obtenerSugerencia(){
+        return this.generadorDeSugerencias
+            .generarSugerencia(this.prendas,
+                this.servicioMetereologico.obtenerTemperatura("Buenos Aires"));
     }
 
 }
