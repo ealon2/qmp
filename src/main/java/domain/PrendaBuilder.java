@@ -8,6 +8,7 @@ public class PrendaBuilder {
   private Material material;
   private Color colorPrimario;
   private Color colorSecundario;
+  private Double temperatura;
 
   public PrendaBuilder(){
   }
@@ -46,9 +47,14 @@ public class PrendaBuilder {
     return this;
   }
 
+  public PrendaBuilder seleccionarTemperaturaMaxima(Double temperatura){
+    this.temperatura = temperatura;
+    return this;
+  }
+
   public Prenda crearPrenda(){
     if (trama == null) trama = Trama.LISA;
-    return new Prenda(trama,tipoPrenda,material,colorPrimario,colorSecundario);
+    return new Prenda(trama,tipoPrenda,material,colorPrimario,colorSecundario,temperatura);
   }
 
 }

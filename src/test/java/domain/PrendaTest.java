@@ -10,7 +10,7 @@ public class PrendaTest {
     private Prenda prenda;
     @Test
     public void crearUnaPrendaConColorPrimario(){
-        prenda = new Prenda(Trama.LISA,TipoPrenda.CAMISA, Material.ALGODON,Color.BLACK,null);
+        prenda = new Prenda(Trama.LISA,TipoPrenda.CAMISA, Material.ALGODON,Color.BLACK,null,Double.valueOf(10));
         assertEquals(prenda.getTipoPrenda(),TipoPrenda.CAMISA);
         assertEquals(prenda.getColorPrimario(),Color.BLACK);
         assertEquals(TipoPrenda.CAMISA.getCategoria(),CategoriaPrenda.SUPERIOR);
@@ -18,7 +18,7 @@ public class PrendaTest {
 
     @Test
     public void crearUnaPrendaConColorSecundario(){
-        prenda = new Prenda(Trama.LISA,TipoPrenda.CAMISA,Material.ALGODON, Color.BLACK,Color.DARK_GRAY);
+        prenda = new Prenda(Trama.LISA,TipoPrenda.CAMISA,Material.ALGODON, Color.BLACK,Color.DARK_GRAY,Double.valueOf(10));
         assertEquals(prenda.getTipoPrenda(),TipoPrenda.CAMISA);
         assertEquals(prenda.getColorPrimario(),Color.BLACK);
         assertEquals(prenda.getColorSecundario(),Color.DARK_GRAY);
@@ -32,6 +32,7 @@ public class PrendaTest {
             .seleccionarMaterial(Material.ALGODON)
             .seleccionarTrama(Trama.LISA)
             .seleccionarColorPrimario(Color.BLACK)
+            .seleccionarTemperaturaMaxima(Double.valueOf(10))
             .crearPrenda();
     }
 
@@ -43,6 +44,7 @@ public class PrendaTest {
             .seleccionarTrama(Trama.LISA)
             .seleccionarColorPrimario(Color.BLACK)
             .seleccionarColorSecundario(Color.DARK_GRAY)
+            .seleccionarTemperaturaMaxima(Double.valueOf(10))
             .crearPrenda();
     }
 

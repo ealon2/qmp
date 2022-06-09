@@ -1,6 +1,8 @@
 package service;
 
+import domain.EstadoClima;
+
 public interface ServicioMetereologico {
 
-  Double obtenerTemperatura(String direccion);
+  EstadoClima obtenerEstadoDelClima(String direccion);
 }

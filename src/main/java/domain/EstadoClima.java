@@ -4,10 +4,10 @@ import java.math.BigDecimal;
 
 public class EstadoClima {
 
-  BigDecimal valorDeTemperatura;
+  Double valorDeTemperatura;
   String unidadDeTemperatura;
 
-  public EstadoClima(String unidad, BigDecimal temperatura){
+  public EstadoClima(String unidad, Double temperatura){
     this.unidadDeTemperatura = unidad; // F: Fahrenheit o C: Celsius
     this.valorDeTemperatura = temperatura;
   }

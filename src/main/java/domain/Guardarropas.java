@@ -12,7 +12,7 @@ public class Guardarropas {
     private final ServicioMetereologico servicioMetereologico;
 
     public Guardarropas(GeneradorDeSugerencias generadorDeSugerencias, ServicioMetereologico servicioMetereologico){
-        this.prendas = new ArrayList<Prenda>();
+        this.prendas = new ArrayList<>();
         this.generadorDeSugerencias = generadorDeSugerencias;
         this.servicioMetereologico = servicioMetereologico;
     }
@@ -24,7 +24,7 @@ public class Guardarropas {
     public List<Prenda> obtenerSugerencia(){
         return this.generadorDeSugerencias
             .generarSugerencia(this.prendas,
-                this.servicioMetereologico.obtenerTemperatura("Buenos Aires"));
+                this.servicioMetereologico.obtenerEstadoDelClima("Buenos Aires").valorDeTemperatura);
     }
 
 }
