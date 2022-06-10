@@ -1,4 +1,20 @@
 -------------------------------------------------------------------------------
 Test set: domain.PrendaTest
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.132 s - in domain.PrendaTest
+Tests run: 6, Failures: 0, Errors: 4, Skipped: 0, Time elapsed: 0.111 s <<< FAILURE! - in domain.PrendaTest
+crearUnaPrendaConColorPrimario  Time elapsed: 0.067 s  <<< ERROR!
+java.lang.UnsatisfiedLinkError: Can't load library: /usr/lib/jvm/java-11-openjdk-amd64/lib/libawt_xawt.so
+	at domain.PrendaTest.crearUnaPrendaConColorPrimario(PrendaTest.java:13)
+
+crearUnaPrendaConColorSecundario  Time elapsed: 0 s  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class java.awt.Color
+	at domain.PrendaTest.crearUnaPrendaConColorSecundario(PrendaTest.java:21)
+
+crarUnaPrendaConColorPrimarioPorPasos  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class java.awt.Color
+	at domain.PrendaTest.crarUnaPrendaConColorPrimarioPorPasos(PrendaTest.java:33)
+
+crarUnaPrendaConColorSecundarioPorPasos  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class java.awt.Color
+	at domain.PrendaTest.crarUnaPrendaConColorSecundarioPorPasos(PrendaTest.java:44)
+

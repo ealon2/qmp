@@ -1,11 +1,10 @@
 package domain;
 
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class GeneradorDeSugerencias {
+public class GeneradorDeAtuendos {
 
   private List<Prenda> obtenerPrendaAdecuada(List<Prenda> prendas,Double temperatura,CategoriaPrenda categoriaPrenda){
     List<Prenda> prendasEncontradas = prendas.stream().filter(
@@ -14,7 +13,6 @@ public class GeneradorDeSugerencias {
 
     if (prendasEncontradas.isEmpty()) throw new SinPrendaParaSugerenciaException();
     return prendasEncontradas;
-
   }
 
   private Prenda obtenerPrendaSuperior(List <Prenda> prendas, Double temperatura){
@@ -33,7 +31,7 @@ public class GeneradorDeSugerencias {
     return this.obtenerPrendaAdecuada(prendas,temperatura,CategoriaPrenda.CALZADO).get(0);
   }
 
-  public List<Prenda> generarSugerencia(List<Prenda> prendas, Double temperatura){
+  public List<Prenda> generarAtuendo(List<Prenda> prendas, Double temperatura){
     ArrayList<Prenda> atuendo = new ArrayList<>();
     atuendo.add(obtenerPrendaSuperior(prendas,temperatura));
     atuendo.add(obtenerPrendaInferior(prendas,temperatura));

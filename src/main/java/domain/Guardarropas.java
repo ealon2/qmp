@@ -1,30 +1,41 @@
 package domain;
 
-import service.ServicioMetereologico;
-
-import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
 
 public class Guardarropas {
 
-    private final GeneradorDeSugerencias generadorDeSugerencias;
-    private final List<Prenda> prendas;
-    private final ServicioMetereologico servicioMetereologico;
+  private static Guardarropas instance = new Guardarropas();
+  private HashMap<Guardarropa, List<Usuario>> guardarropasCompartidos;
+  private HashMap<Usuario,List<Guardarropa>> guardarropas;
 
-    public Guardarropas(GeneradorDeSugerencias generadorDeSugerencias, ServicioMetereologico servicioMetereologico){
-        this.prendas = new ArrayList<>();
-        this.generadorDeSugerencias = generadorDeSugerencias;
-        this.servicioMetereologico = servicioMetereologico;
+  private Guardarropas(){
+    guardarropasCompartidos = new HashMap<>();
+    guardarropas = new HashMap<>();
+  }
+
+  public static Guardarropas getInstance(){
+    return instance;
+  }
+
+  public void compartirGuardarropas(Guardarropa guardarropa, Usuario usuario){
+    if (this.guardarropasCompartidos.containsKey(guardarropa)){
+      this.guardarropasCompartidos.get(guardarropa).add(usuario);
     }
+    this.guardarropasCompartidos.put(guardarropa, Arrays.asList(usuario));
+  }
 
-    public void agregarPrenda(Prenda prenda) {
-        this.prendas.add(prenda);
+  public void agregarGuardarropas(Usuario usuario, Guardarropa guardarropa){
+    if (this.guardarropas.containsKey(usuario)){
+      this.guardarropas.get(usuario).add(guardarropa);
     }
+    this.guardarropas.put(usuario, Arrays.asList(guardarropa));
+  }
 
-    public List<Prenda> obtenerSugerencia(){
-        return this.generadorDeSugerencias
-            .generarSugerencia(this.prendas,
-                this.servicioMetereologico.obtenerEstadoDelClima("Buenos Aires").valorDeTemperatura);
+  public void quitarGuardarropas(Usuario usuario, Guardarropa guardarropa){
+    if (this.guardarropas.containsKey(usuario)){
+      this.guardarropas.get(usuario).remove(guardarropa);
     }
-
+  }
 }

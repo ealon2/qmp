@@ -24,5 +24,4 @@ public class Atuendo {
     this.prendas = prendas;
   }
 
-
 }
